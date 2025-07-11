@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import "tailwindcss";
+
+/* Apply the Outfit font globally to all elements */
+* {
+  font-family: "Outfit", sans-serif;
+  /* Ensure smooth transitions for all properties */
+  transition: all 0.3s ease-in-out;
+}
+
+/* Basic body and html styles for consistent full-height layout */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Define custom theme colors using CSS variables.
+   These can be referenced in your Tailwind classes using arbitrary values,
+   e.g., text-[var(--color-primary)] or bg-[var(--color-primary)].
+   For full Tailwind integration, these should ideally be in tailwind.config.js. */
+:root {
+  --color-primary: #2563EB; /* A vibrant blue for primary actions/branding */
+  --color-primary-dull: #1F58D8; /* A slightly darker shade of primary */
+  --color-light: #F1F5F9; /* A light grey for backgrounds or subtle elements */
+  --color-borderColor: #c4c7d2; /* A soft grey for borders */
+}
+
+/* Custom utility classes or base styles can be added here */
+/* Example: A class for rounded corners on common elements */
+.rounded-default {
+  border-radius: 0.5rem; /* Equivalent to Tailwind's rounded-lg */
+}
+
+/* Example: A class for subtle shadow */
+.shadow-subtle {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Add any other global styles here */
